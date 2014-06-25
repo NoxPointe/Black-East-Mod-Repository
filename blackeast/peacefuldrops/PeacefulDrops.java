@@ -12,7 +12,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid="PeacefulDrops", name="Black East Peaceful Drops", version="0.0.3")
+@Mod(modid="PeacefulDrops", name="Black East Peaceful Drops", version="0.0.4")
 
 public class PeacefulDrops {
 	
@@ -35,6 +35,11 @@ public class PeacefulDrops {
     			'x', new ItemStack(Items.netherbrick),
     			'y', new ItemStack(Items.quartz),
     			'z', new ItemStack(Items.glowstone_dust));
+    	
+    	GameRegistry.addShapelessRecipe(new ItemStack(Items.gunpowder),
+    			new ItemStack(Items.flint),
+    			new ItemStack(Items.lava_bucket),
+    			new ItemStack(Items.water_bucket));
     }
     
     @EventHandler

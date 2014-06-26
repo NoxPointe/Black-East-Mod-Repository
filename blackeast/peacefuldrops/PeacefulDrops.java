@@ -1,5 +1,6 @@
 package com.blackeast.peacefuldrops;
 
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -12,7 +13,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid="PeacefulDrops", name="Black East Peaceful Drops", version="0.0.4")
+@Mod(modid="PeacefulDrops", name="Black East Peaceful Drops", version="0.0.5")
 
 public class PeacefulDrops {
 	
@@ -33,7 +34,7 @@ public class PeacefulDrops {
     	
     	GameRegistry.addRecipe(new ItemStack(Items.nether_star), "xyx", "yzy", "xyx",
     			'x', new ItemStack(Items.netherbrick),
-    			'y', new ItemStack(Items.quartz),
+    			'y', new ItemStack(Blocks.quartz_block),
     			'z', new ItemStack(Items.glowstone_dust));
     	
     	GameRegistry.addShapelessRecipe(new ItemStack(Items.gunpowder),
